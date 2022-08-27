@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root{
+    --first-color: hsl(354, 78%, 60%);
+    --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 21%);
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 55%);
+    --body-color: hsl(206, 4%, 97%);
+    --container-color: #fff;
+    --border-color: hsl(0, 0%, 94%);
+    --body-font: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+/*UTILIDADES*/
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-color);
+    scroll-behavior: smooth;
+}
+
+.visible{
+    background-color: black;
+    color: white;
+}
+
+.colores{
+    color: white;   
+}
+
+.padding-bottom{
+    padding-bottom: 100px;
+}
+
+header{
+    width: 100%;
+    background-color: var(--container-color);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header .navBar{
+    width: 75%;
+    margin: 0 auto;
+}
+
+header .navBar nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .navBar nav .store-list{
+    display: flex;
+    width: 50%;
+}
+
+header .navBar nav .store-list h4{
+    display: flex;
+    align-items: center;
+}
+
+header .navBar nav .store-list ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navBar nav .store-list ul a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header .navBar nav figure{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+header .navBar nav figure svg{
+    display: flex;
+    margin-left: 20px;
+}
+
+header .navBar nav figure .counter{
+    position: absolute;
+    background-color: black;
+    color: var(--container-color);
+    bottom: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+}
+/*------------------MAIN---------------------*/
+
+
+main{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*--------SECTION NUMBER ONE---------*/
+
+main .news-products{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+main .news-products .text-products{
+    margin: auto;
+    width: 50%;
+    
+}
+
+main .news-products .text-products .title_product{
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: var(--title-color);
+}
+
+main .news-products .text-products .text-product{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main .news-products .text-products .price-home{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--first-color);
+    margin-bottom: 3rem;
+}
+
+main .news-products .text-products .btns{
+    display: flex;
+}
+
+main .news-products .text-products .btns .btn-product{
+    padding: 1rem 1.15rem;
+    background-color: var(--text-color-light);
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+main .news-products .text-products .btns .btn-product:hover{
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+main .news-products .text-products .btns .btn-product2{
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--container-color);
+    font-weight: 500;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .news-products .text-products .btns .btn-product2:hover{
+    background-color: var(--button-color-alt);
+    cursor: pointer;
+}
+
+main .news-products figure{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--first-color);
+    align-items: flex-end;
+}
+
+main .news-products figure img{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    display: flex;
+    align-self: center;
+}
+
+/*----------------ASIDE MARKET---------------*/
+
+main aside{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--container-color);
+    color: var(--text-color);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.364);
+    z-index: 3;
+}
+
+main aside .close{
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    color: var(--body-font);
+    cursor: pointer;
+}
+
+main aside .title-market{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+/*----------------Header PRODUCTS---------------------*/
+
+main .articles .header-articles{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5.5rem 0 5.5rem;
+}
+
+main .articles .header-articles .card{
+    border-left: 1px solid var(--text-color);
+}
+
+main .articles .header-articles .card:nth-child(1) {
+    border: none;
+}
+
+main .articles .articles-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+main .articles .articles-card .card-article{
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
+main .articles .articles-card .card-article .container-img{
+   background-color: var(--card-color);
+   margin: 0;
+   border-radius: 10px 10px 0 0;
+}
+
+main .articles .articles-card .card-article .container-img img{
+    width: 100%;
+}
+
+main .articles .articles-card .card-article .add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--button-color);
+    border-radius: 25px;
+    margin: 0;
+    cursor: pointer;
+}
+
+main .articles .articles-card .card-article .add:hover{
+    background-color: var(--button-color-alt);
+    color: var(--body-color);
+}
+
+main .articles .articles-card .card-article .text-column{
+    display: flex;
+    align-items: flex-end;
+}
+
+main .articles .articles-card .card-article .text-column .price-article{
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: 0;
+}
+
+main .articles .articles-card .card-article .text-column span{
+    margin: 5px;
+    text-align: center;
+}
+
+main .articles .articles-card .card-article .text-column .quantity{
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .articles .articles-card .card-article .type-shirts{
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.border{
+    border-top: 1px solid var(--card-color);
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    background-color: var(--card-color);
+    position: absolute;
+    bottom: -1;
+    margin-top: 100px;
+    color: var(--text-color);
+}
+
+footer .header-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 75%;
+    margin: auto;
+    justify-items: center;
+}
+
+footer .header-footer h3{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--title-color);
+    padding-top: 100px;
+}
+
+footer .header-footer p{
+    font-size: 1.5rem;
+}
+
+footer .footer-down h4{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+    
+    header .navBar{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    main aside{
+        width: 100%;
+        height: 100vh;
+    }
+
+    footer .header-footer{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 850px){
+
+
+    main .news-products{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .news-products .text-products{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    main .news-products .text-products .btns{
+        justify-content: center;
+    }
+
+    main .news-products figure{
+        width: 90%;
+    }
+
+    main .articles .header-articles{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    main .articles .articles-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .articles .articles-card .card-article .text-column{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .header-footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

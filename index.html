@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css"/>
+</head>
+<body>
+
+<!------------------------------CABECERA----------------------------------------->
+
+    <header>
+        <div class="navBar">
+
+            <nav class="nav-container">
+
+                <div class="store-list">
+                    <h4>STORE</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                    </ul>
+                </div>
+
+                <figure class="store-theme">
+
+                    <svg class="dark-b" xmlns="http://www.w3.org/2000/svg" 
+                    class="icon icon-tabler icon-tabler-brightness-up" 
+                    width="40" 
+                    height="40" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="gray" 
+                    fill="none" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="12" y1="5" x2="12" y2="3" />
+                        <line x1="17" y1="7" x2="18.4" y2="5.6" />
+                        <line x1="19" y1="12" x2="21" y2="12" />
+                        <line x1="17" y1="17" x2="18.4" y2="18.4" />
+                        <line x1="12" y1="19" x2="12" y2="21" />
+                        <line x1="7" y1="17" x2="5.6" y2="18.4" />
+                        <line x1="6" y1="12" x2="4" y2="12" />
+                        <line x1="7" y1="7" x2="5.6" y2="5.6" />
+                    </svg>
+
+                    <!------------------------Other SVG---------------------------------->
+
+                    <svg class="click" xmlns="http://www.w3.org/2000/svg" 
+                    class="icon icon-tabler icon-tabler-shopping-cart" 
+                    width="40" height="40" viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="gray" 
+                    fill="none" 
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+
+                    <p class="counter">0</p>
+
+                </figure>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+<!--------------------------------MAIN---------------------------------------->
+
+    <main>
+
+        <section class="news-products">
+
+            <div class="text-products">
+
+                <h1 class="title_product">New Sweatshirt <br> COLLECTIONS 2022 </h1>
+                <p class="text-product">Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design. If you like this design I'll very happy because it's for you.</p>
+                <p class="price-home">$14.00</p>
+                <div class="btns">
+                    <p class="btn-product">Discover</p>
+                    <span class="btn-product2">ADD TO CART</span>
+                </div>
+
+            </div>
+
+            <figure>
+                <img src="img/sweater.png" alt="Sweater-Academlo">
+            </figure>
+
+        </section>
+
+        <aside>
+
+            <span class="close">X</span>
+            <h2 class="title-market center ">My cart</h2>
+            <figure class="img-market center " >
+                <img src="./img/empty-cart.png" alt="empty-cart">
+            </figure>
+            <p class="center">Your cart is empty</p>
+            <p class="center">You can add items to your cart by clicking on the "+" button on the product page.</p>
+
+        </aside>
+
+        <section class="articles">
+            <div class="header-articles">
+                <div class="card">
+                    <h3>Show All</h3>
+                    <p>Show all product</p>
+                </div>
+                <div class="card">
+                    <h3>Hoodies</h3>
+                    <p>3 products</p>
+                </div>
+
+                <div class="card">
+                    <h3>Shirts</h3>
+                    <p>4 products</p>
+                </div>
+
+                <div class="card">
+                    <h3>Sweatshirts</h3>
+                    <p>4 products</p>
+                </div>
+            </div>
+
+            <!---------cabecera de la seccion------------->
+
+            <div class="articles-card">
+                <div class="card-article">
+                    <figure class="container-img">
+                        <img src="./img/featured1.png" alt="sweater">
+                    </figure>
+                    <p class="add">+</p>
+                    <div class="text-column">
+                        <h2 class="price-article">$14.00</h2>
+                        <span>|</span>
+                        <h3 class="quantity">Stock: 20</h3>
+                    </div>
+                    <p class="type-shirts">Hoodies</p>
+                </div>
+
+                <div class="card-article">
+                    <figure class="container-img">
+                        <img src="./img/featured2.png" alt="sweater">
+                    </figure>
+                    <p class="add">+</p>
+                    <div class="text-column">
+                        <h2 class="price-article">$24.00</h2>
+                        <span>|</span>
+                        <h3 class="quantity">Stock: 20</h3>
+                    </div>
+                    <p class="type-shirts">Shirts</p>
+                </div>
+
+                <div class="card-article">
+                    <figure class="container-img">
+                        <img src="./img/featured3.png" alt="sweater">
+                    </figure>
+                    <p class="add">+</p>
+                    <div class="text-column">
+                        <h2 class="price-article">$24.00</h2>
+                        <span>|</span>
+                        <h3 class="quantity">Stock: 20</h3>
+                    </div>
+                    <p class="type-shirts">Sweatshirts</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="header-footer">
+            <div>
+                <h3>Our information</h3>
+                <p>Toluca-Mexico</p>
+            </div>
+
+            <div>
+                <h3>About us</h3>
+                <p>Support center</p>
+                <p>Customer support</p>
+                <p>About us</p>
+                <p>Copy right</p>
+            </div>
+
+            <div>
+                <h3>Product</h3>
+                <p>Hoodie</p>
+                <p>Shirts</p>
+                <p class="padding-bottom">Sweatshirts</p>
+            </div>
+
+            <div class="footer-svgs">
+                <h3 class="center">Social</h3>
+                <figure>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6b6d6b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+        
+                    <!--------------------------------------------------------------------------------------------->
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6b6d6b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+        
+                    <!---------------------------------------------------------------------------------------------->
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6b6d6b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+
+                </figure>
+            </div>
+        </div>
+
+        <div class="footer-down">
+            <h4>Derechos reservados &copy; Jhorman Nieto P</h4>
+        </div>
+
+    </footer>
+
+</body>
+<script src="js/app.js"></script>
+</html>
